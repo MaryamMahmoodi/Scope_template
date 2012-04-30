@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Document scripting by MRM */
+@charset "utf-8";
+/* CSS Document example:  template of simple design by Maryam Mahmoodi*/
+
+/* browser reset */
+
+@media all{
+	
+/* Global reset of paddings and margins for all HTML elements */
+*{  
+	padding:0;
+	margin:0;
+}
+
+/* Correction:margin/padding reset caused too small select boxes. */
+option{
+	padding-left:0.4em;
+}/*LTR*/
+
+select {
+	padding:1px;
+}
+
+/* (en) Global fix of the Italics bugs in IE 5.x and IE 6 */
+* html body *{
+	overflow:visible;
+}
+
+body{
+	background-color:#D7D7D7;
+	font-size:100.01%; /* Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+	color:#000;
+	text-align:left; /* for LTR */
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+}
+
+div{
+	outline:0 none;
+}
+
+/* HTML 5 - adjusting visual formatting model to block level */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display:block;
+}
+
+/* Clear borders for <fieldset> and <img> elements */
+fieldset, img {
+	border:0 solid;
+}
+
+/* Clear borders/outline for links when you click */
+a:active, a:href {
+ border:0 none;
+ outline:0 none;
+}
+} 
+
+@media print {
+
+.noprint {
+	display:none !important;
+}
+
+}
+/* <Start of major divs -----  */
+
+div.container{
+	width:980px;
+	min-height:1340px;
+	margin:0 auto;
+	padding-top:1px;
+}
+
+div.header_top{
+	 width:auto;
+	 height:68px;
+}
+
+div.header{
+	 width:auto;
+	 height:76px;
+	 background-color:#fff;
+}
+
+div.content{
+	width:auto;
+	height:732px;
+	margin-top:10px;
+	background-color:#fff;
+}
+
+div.order{
+	width:auto;
+	height:334px;
+	margin-top:10px;
+	background-color:#222;
+	color:#aaa;
+}
+
+div.footer{
+	width:auto;
+	height:108px;
+	outline:1px solid #0ff;
+}
+
+div.clear{
+	width:0px !important;
+	height:0px !important;
+	clear:both !important;
+	visibility:hidden !important;
+}
+/* ----- finished major divs /> */
+
+/* <  this is an image for background -----  */
+img.background_img{
+	 position:fixed;
+	 top:0;
+	 left:0;
+	 z-index:-1;
+}
+/* ----- End of image for background /> */
+
+/* <Start contain of div header_top -----  */
+div.header_top p{
+	background-color:#FFD62C;
+	padding:4px 10px;
+	float:right;
+	font-size:10px;
+	color:#222;
+	margin:20px 20px 0 0;
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* ----- the end of contain of div.header_top /> */
+
+/* < contain of div.header -----  */
+
+div.header div.logo{ /* navigation */
+	width:350px;
+	min-height:75px;
+	float:left;
+}
+
+div.header div.logo img{
+	margin:25px 0 0 15px;
+}
+
+div.header div.menu{
+	width:629px;
+	min-height:75px;
+	margin-left:351px;
+	padding-top:1px;
+}
+
+div.header div.menu ul {
+	list-style-type:none;
+	line-height:35px;
+}
+
+div.header div.menu ul li{
+	float:left;
+	position:relative;
+	background-color:#FFFFFF;
+}
+
+div.header div.menu ul li a{
+	padding:0 10px;
+	color:#B2B2B6;
+	font-weight:bold;
+	font-size:14px;
+	height:35px;
+	line-height:35px;
+	display:block;
+	position:relative;
+	text-decoration:none;
+	white-space:nowrap;
+}
+
+div.header div.menu ul li:hover{
+	visibility:inherit; 
+	background-color:#f2f2f2;
+}
+
+div.header div.menu ul li:hover a{
+	color:#282828;
+}
+
+div.header div.menu ul li a:hover,{
+  background-color:#fff;
+  color:#222;
+	text-decoration:none;
+}
+
+div.header div.menu ul li:hover ul{
+	left:-1px;
+	visibility:visible;
+	display:block;
+}
+
+div.header div.menu ul ul {
+	position:absolute;
+	min-width:150px;
+	visibility:hidden;
+	display:none;
+	z-index:99;
+}
+
+div.header div.menu ul ul li { 
+	width:100%;
+	height:35px;
+	line-height:35px;
+	border-top:1px solid #efefef;
+	float:none;
+ }
+ 
+div.header div.menu ul ul li:first-child {
+	border-top: none;
+}
+
+div.header div.menu ul ul li a { 
+	color:#B2B2B6;
+	font-weight:normal;
+	line-height:35px;
+	height:35px;
+	font-size:12px;
+	text-decoration:none;
+ }
+ 
+div.header div.menu ul ul li:hover { 
+
+ }
+/* ----- contain of div.header /> */
+div.footer div.sub_footer{
+	
+}
